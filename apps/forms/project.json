@@ -16,7 +16,12 @@
         "polyfills": ["zone.js"],
         "tsConfig": "apps/forms/tsconfig.app.json",
         "assets": ["apps/forms/src/favicon.ico", "apps/forms/src/assets"],
-        "styles": ["apps/forms/src/styles.scss"],
+        "styles": [
+          "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+          "node_modules/primeng/resources/primeng.min.css",
+          "node_modules/primeflex/primeflex.css",
+          "apps/forms/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
