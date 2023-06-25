@@ -1,1 +1,90 @@
-<test-primeng-nx-welcome></test-primeng-nx-welcome>
+<div class="grid">
+  <div class="col-12">
+    <h1>Test <code>p-float-label</code></h1>
+  </div>
+  <div class="col-12">
+    <h2>InputText</h2>
+  </div>
+  <div class="col-12">
+    <div class="grid formgrid p-fluid">
+      <div class="col field">
+        <span class="p-float-label">
+          <input pInputText id="a" />
+          <label htmlFor="a">InputText</label>
+        </span>
+      </div>
+      <div class="col field">
+        <div class="p-inputgroup">
+          <span class="p-inputgroup-addon">A</span>
+          <span class="p-float-label">
+            <input pInputText id="b" />
+            <label htmlFor="b">InputText and InputGroup</label>
+          </span>
+          <span class="p-inputgroup-addon">B</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12">
+    <h2>InputNumber</h2>
+  </div>
+  <div class="col-12">
+    <div class="grid formgrid p-fluid">
+      <div class="col field">
+        <span class="p-float-label">
+          <p-inputNumber inputId="c" [showButtons]="true"></p-inputNumber>
+          <label htmlFor="c">InputNumber</label>
+        </span>
+      </div>
+      <div class="col field">
+        <div class="p-inputgroup">
+          <span class="p-inputgroup-addon">A</span>
+          <span class="p-float-label">
+            <p-inputNumber inputId="d" [showButtons]="true"></p-inputNumber>
+            <label htmlFor="d">InputNumber + InputGroup</label>
+          </span>
+        </div>
+      </div>
+      <div class="col field">
+        <label htmlFor="e"><small>InputNumber + InputGroup</small></label>
+        <div class="p-inputgroup">
+          <span class="p-inputgroup-addon">A</span>
+          <p-inputNumber inputId="e" [showButtons]="true"></p-inputNumber>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12">
+    <h2>InputMask</h2>
+  </div>
+  <div class="col-12">
+    <div class="grid formgrid p-fluid">
+      <div class="col field">
+        <span class="p-float-label">
+          <p-inputMask inputId="f" mask="(9) 999999"></p-inputMask>
+          <label htmlFor="f">InputMask</label>
+        </span>
+      </div>
+      <div class="col field">
+        <div class="p-inputgroup">
+          <span class="p-inputgroup-addon">A</span>
+          <span class="p-float-label">
+            <p-inputMask inputId="g" mask="(9) 999999"></p-inputMask>
+            <label htmlFor="g">InputMask + InputGroup</label>
+          </span>
+          <span class="p-inputgroup-addon">B</span>
+        </div>
+      </div>
+      <div class="col field">
+        <label htmlFor="h"><small>InputMask + InputGroup</small></label>
+        <div class="p-inputgroup">
+          <span class="p-inputgroup-addon">A</span>
+          <p-inputMask inputId="h" mask="(9) 999999"></p-inputMask>
+          <span class="p-inputgroup-addon">B</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

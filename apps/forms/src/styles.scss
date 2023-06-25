@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+
+body {
+  font-family: var(--font-family);
+}
+
+// Make input group work with input mask
+.p-fluid .p-inputgroup p-inputmask {
+  flex: 1 1 auto;
+}
+
+.p-fluid .p-inputgroup p-inputmask .p-inputtext {
+  width: 100%;
+}
+
+.p-inputgroup p-inputmask:not(:first-child) .p-inputtext {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.p-inputgroup p-inputmask:not(:last-child) .p-inputtext {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+// Make input group work with input number
+.p-inputgroup > .p-inputwrapper > .p-inputnumber-buttons-stacked > .p-inputnumber-input:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
